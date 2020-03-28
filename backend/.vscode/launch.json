@@ -61,9 +61,10 @@
         },
         {
             "type": "node",
-            "request": "launch",
+            "request": "attach",
+            "protocol": "inspector",
+            "restart": true,
             "name": "Launch Program",
-            "program": "${workspaceFolder}/src/index.js",
             "skipFiles": [
                 "<node_internals>/**"
             ]
